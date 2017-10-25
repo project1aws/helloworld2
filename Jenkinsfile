@@ -14,7 +14,7 @@ node{
   stage('push'){
     docker.withRegistry('https://registry.hub.docker.com', 'new-docker-hub-creds'){
     app.push("latest")
-    app.push("${BUILDNUMBER}")
+    app.push("${env.BUILDNUMBER}")
   }
   }
 }
