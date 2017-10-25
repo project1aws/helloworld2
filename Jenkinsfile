@@ -12,7 +12,7 @@ node{
     }
   }
   stage('push'){
-    docker.withRegistery('https://hub.docker.com', 'new-docker-hub-creds'){
+    docker.withRegistry('https://hub.docker.com', 'new-docker-hub-creds'){
     app.push("latest")
     app.push("${BUILDNUMBER}")
   }
