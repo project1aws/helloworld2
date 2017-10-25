@@ -1,5 +1,5 @@
 #docker file
-FROM  node:7-onbuild
+FROM node:7-onbuild
 
 MAINTAINER Rahul Varghese
 
